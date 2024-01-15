@@ -15,7 +15,7 @@ public class VendingMachineController {
 
     @GetMapping("/insert/nickel")
     public ResponseDto insertNickel() {
-        return ResponseDto.from(service.insertNicel());
+        return ResponseDto.from(service.insertNickel());
     }
 
     @GetMapping("/insert/dime")
