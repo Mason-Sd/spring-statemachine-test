@@ -1,0 +1,15 @@
+### test nickel
+GET http://localhost:8080/insert/nickel
+
+### test dime
+GET http://localhost:8080/insert/dime
+
+### test quarter
+GET http://localhost:8080/insert/quarter
+
+### test push juice
+GET http://localhost:8080/push/orange
+
+### test push apple juice
+GET http://localhost:8080/push/apple
+

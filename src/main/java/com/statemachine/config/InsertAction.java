@@ -18,12 +18,15 @@ public class InsertAction implements Action<States, Events> {
         switch (stateContext.getEvent()) {
             case InsertNickel:
                 VendingMachineService.setInsertedCents(currentCents + NICKEL); // InsertNickel 발생 시 Nickel 투입
+                VendingMachineService.setBeverage(null);
                 break;
             case InsertDime:
                 VendingMachineService.setInsertedCents(currentCents + DIME); // InsertDime 발생 시 DIME 투입
+                VendingMachineService.setBeverage(null);
                 break;
             case InsertQuarter:
                 VendingMachineService.setInsertedCents(currentCents + QUARTER); // InsertQuarter 발생 시 QUARTER 투입
+                VendingMachineService.setBeverage(null);
                 break;
         }
     }
